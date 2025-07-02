@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de notas</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Calculador de notas</h1>
+
+        <select id="select-horas">
+            <option value="60">60 Horas</option>
+            <option value="30">30 Horas</option>
+        </select>
+
+        <p>Digite as notas do aluno:</p>
+        <div id="inputs-container"></div>
+
+        <input type="button" value="Calcular" id="btn-calcular">
+
+        <div class="result-box" id="result-box">
+            <p>Média Final: <span id="media-final"></span></p>
+            <p>Situação: <span id="situacao"></span></p>
+            <!-- campo para nota da quarta prova será inserido dinamicamente -->
+        </div>
+
+        <footer>
+            Você pode usar <kbd>Shift</kbd> para navegar entre os campos e <kbd>Enter</kbd> para calcular.
+        </footer>
+
+    </main>
+</body>
+</html>
